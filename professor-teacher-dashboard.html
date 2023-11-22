@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="professor-teacher-dashboard.css">
+    <link rel="shortcut icon" href="images/logo.png">
+    <title>Professors</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- SIDEBAR SECTION: START -->
+
+        <aside>
+            <div class="toggle">
+                <div class="logo">
+                    <img src="images/logo.png">
+                    <h2><b>Student</b><span class="danger"> Dashboard</span></h2>
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-icons-sharp">
+                        close
+                    </span>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <a href="teacher-dashboard.html" id="mate">
+                    <span class="material-icons-sharp">
+                        groups
+                    </span>
+                    <h3>Students</h3>
+                </a>
+
+                <a href="professor-teacher-dashboard.html" class="active">
+                    <span class="material-symbols-outlined">
+                        supervisor_account
+                    </span>
+                    <h3>Teachers</h3>
+                </a>
+
+                <a href="attendance-teacher-dashboard.html">
+                    <span class="material-symbols-outlined">
+                        tv_options_edit_channels
+                    </span>
+                    <h3>Student Attendance</h3>
+                </a>
+
+                <a href="grades-teacher-dashboard.html">
+                    <span class="material-symbols-outlined">
+                        trending_up
+                    </span>
+                    <h3>Student Grades</h3>
+                </a>
+
+                <a href="">
+                    <span class="material-icons-sharp">
+                        logout
+                    </span>
+                    <h3>Logout</h3>
+                </a>
+
+            </div>
+        </aside>
+
+        <!-- SIDEBAR SECTION: END -->
+
+        <!-- MAIN SECTION: START -->
+
+        <main>
+
+            <h1  class="font-effects-underline"><b class="bld-name">Classmates</b></h1>
+
+            <div class="new-users">
+
+                <!-- BSCS CLASSMATES -->
+
+                <h4 style="text-align: center;"><b>IT/CS Department</b></h4>
+                <div class="user-list">
+
+                    <div class="user" id="blurred">
+                        <figure><img src="images/sir-celo.jpg"></figure>
+                        <h2><b class="bld-name">Mr. Marcelo</b></h2>
+                        <p>Subject: THS-103</p>
+
+                        <br>
+                        <a href="#" onclick="toggle_marcelo()" class="bn3">Details</a>
+                    </div>
+
+                    <div class="user">
+                        <figure><img src="images/sir-eser.jpg"></figure>
+                        <h2><b class="bld-name">Mr. Eser</b></h2>
+                        <p>Subject: IAS-102</p>
+
+                        <br>
+                        <a href="#" onclick="toggle_eser()" class="bn3">Details</a>
+                    </div>
+
+                    <div class="user">
+                        <figure><img src="images/sir-jhay.jpg"></figure>
+                        <h2><b class="bld-name">Mr. Jhay</b></h2>
+                        <p>Subject: HCI-101</p>
+
+                        <br>
+                        <a href="#" onclick="toggle_jhay()" class="bn3">Details</a>
+                    </div>
+
+                    <div class="user">
+                        <figure><img src="images/sir-mar.jpg"></figure>
+                        <h2><b class="bld-name">Mr. Mar</b></h2>
+                        <p>Subject: ELEC 2</p>
+
+                        <br>
+                        <a href="#" onclick="toggle_mar()" class="bn3">Details</a>
+                    </div>
+                </div>
+
+            <!-- IT/CS DEPARTMENT - MODAL -->
+
+            <!--- SIR MARCELO - MODAL --->
+
+            <div id="marcelo_popup">
+
+                <a href="#" onclick="toggle_marcelo()"><span class="material-icons-sharp" id="close_button">cancel</span></a>
+
+                <a href="#" class="column col-xs-6" id ="caption">
+                <span class="text"><h2>Mr. Marcelo</h2></span><img src="images/sir-celo.jpg"></a>
+
+                <h2><b class="bld-name">Marcelo Batiduan III</b></h2>
+                <h5><b class="bld-name">Subject: THS-102</b></h5>
+                <h3><b class="bld-name">Gender: Male</b></h3>
+                <h3><b class="bld-name">Email: marcelo.batiduan@lccn.edu.ph</b></h3>
+                <br>
+                <h3><b class="bld-name">Bio: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos, doloremque!
+                    Rem perspiciatis, minus ullam porro obcaecati, ducimus architecto velit eius modi illo, 
+                    quasi delectus adipisci!</h3>
+                <br>
+
+            </div>
+
+            <!--- SIR ESER - MODAL --->
+
+            <div id="eser_popup">
+
+                <a href="#" onclick="toggle_eser()"><span class="material-icons-sharp" id="close_button">cancel</span></a>
+
+                <a href="#" class="column col-xs-6" id ="caption">
+                <span class="text"><h2>Mr. Eser</h2></span><img src ="images/sir-eser.jpg"></a>
+
+                <h2><b class="bld-name">Eser Fernandez</b></h2>
+                <h5><b class="bld-name">Subject: IAS-102</b></h5>
+                <h3><b class="bld-name">Gender: Male</b></h3>
+                <h3><b class="bld-name">Email: eser.fernandez@lccn.edu.ph</b></h3>
+                <br>
+                <h3><b class="bld-name">Bio: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos, doloremque!
+                    Rem perspiciatis, minus ullam porro obcaecati, ducimus architecto velit eius modi illo, 
+                    quasi delectus adipisci!</h3>
+
+                <br>
+
+            </div>
+
+            <!--- SIR JHAY - MODAL --->
+
+            <div id="jhay_popup">
+
+                <a href="#" onclick="toggle_jhay()"><span class="material-icons-sharp" id="close_button">cancel</span></a>
+
+                <a href="#" class="column col-xs-6" id ="caption">
+                <span class="text"><h2>Mr. Jhay</h2></span><img src ="images/sir-jhay.jpg"></a>
+
+                <h2><b class="bld-name">Jhay Ibañez</b></h2>
+                <h5><b class="bld-name">Subject: HCI-101</b></h5>
+                <h3><b class="bld-name">Gender: Male</b></h3>
+                <h3><b class="bld-name">Email: jhay.ibanez@lccn.edu.ph</b></h3>
+                <br>
+                <h3><b class="bld-name">Bio: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos, doloremque!
+                    Rem perspiciatis, minus ullam porro obcaecati, ducimus architecto velit eius modi illo, 
+                    quasi delectus adipisci!</h3>
+
+                <br>
+            
+            </div>
+
+            <!--- SIR MAR - MODAL --->
+
+            <div id="mar_popup">
+
+                <a href="#" onclick="toggle_mar()"><span class="material-icons-sharp" id="close_button">cancel</span></a>
+
+                <a href="#" class="column col-xs-6" id ="caption">
+                <span class="text"><h2>Mr. Mar</h2></span><img src ="images/sir-mar.jpg"></a>
+
+                <h2><b class="bld-name">Engelmar Malabanan</b></h2>
+                <h5><b class="bld-name">Subject: ELEC 2</b></h5>
+                <h3><b class="bld-name">Gender: Male</b></h3>
+                <h3><b class="bld-name">Email: engelmar.malabanan@lccn.edu.ph</b></h3>
+                <br>
+                <h3><b class="bld-name">Bio: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos, doloremque!
+                    Rem perspiciatis, minus ullam porro obcaecati, ducimus architecto velit eius modi illo, 
+                    quasi delectus adipisci!</h3>
+
+                <br>
+            
+            </div>
+
+            <!-- SOCIAL STUDIES - USERS --> 
+
+            <div class="new-users">
+
+                <h4 style="text-align: center;"><b>Social Studies Department</b></h4>
+                <div class="user-list">
+
+                    <div class="user" id="blur">
+                        <figure><img src="images/sir-dg.jpg"></figure>
+                        <h2><b class="bld-name">Mr. De Guzman</b></h2>
+                        <p>Subject: PHILO-101</p>
+
+                        <br>
+                        <a href="#" onclick="toggle_dg()" class="bn3">Details</a>
+                    </div>
+
+                    
+                    <div class="user">
+                    <figure><img src="images/maam-cielo.jpg"></figure>
+                        <h2><b class="bld-name">Maam Cielo</b></h2>
+                        <p>Subject: ENG-102</p>
+
+                        <br>
+                        <a href="#" onclick="toggle_cielo()" class="bn3">Details</a>
+                    </div>
+
+                    <div class="user">
+                        <figure><img src="images/sir-george.jpg"></figure>
+                        <h2><b class="bld-name">Mr. George</b></h2>
+                        <p>Subject: RVE-301</p>
+
+                        <br>
+                        <a href="#" onclick="toggle_george()" class="bn3">Details</a>
+                    </div>
+
+                </div>
+
+            <!-- SOCIAL STUDIES - MODAL CONTENTS -->
+
+            <div id="dg_popup">
+
+                <a href="#" onclick="toggle_dg()"><span class="material-icons-sharp" id="close_button">cancel</span></a>
+
+                <a href="#" class="column col-xs-6" id ="caption">
+                <span class="text"><h2>Dr. De Guzman</h2></span><img src="images/sir-dg.jpg"></a>
+
+                <h2><b class="bld-name">Cipriano De Guzman, Ph.D.</b></h2>
+                <h5><b class="bld-name">Subject: PHILO-101</b></h5>
+                <h3><b class="bld-name">Gender: Male</b></h3>
+                <h3><b class="bld-name">Email: cipriano.deguzman@lccn.edu.ph</b></h3>
+                <br>
+                <h3><b class="bld-name">Bio: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos, doloremque!
+                    Rem perspiciatis, minus ullam porro obcaecati, ducimus architecto velit eius modi illo, 
+                    quasi delectus adipisci!</h3>
+                <br>
+
+            </div>
+
+            <div id="cielo_popup">
+
+                <a href="#" onclick="toggle_cielo()"><span class="material-icons-sharp" id="close_button">cancel</span></a>
+
+                <a href="#" class="column col-xs-6" id ="caption">
+                <span class="text"><h2>Dr. Oballes</h2></span><img src="images/maam-cielo.jpg"></a>
+
+                <h2><b class="bld-name">Cielo Oballes, Ph.D.</b></h2>
+                <h5><b class="bld-name">Subject: ENG-102</b></h5>
+                <h3><b class="bld-name">Gender: Female</b></h3>
+                <h3><b class="bld-name">Email: cielo.oballes@lccn.edu.ph</b></h3>
+                <br>
+                <h3><b class="bld-name">Bio: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos, doloremque!
+                    Rem perspiciatis, minus ullam porro obcaecati, ducimus architecto velit eius modi illo, 
+                    quasi delectus adipisci!</h3>
+                <br>
+
+            </div>
+
+            <div id="george_popup">
+
+                <a href="#" onclick="toggle_george()"><span class="material-icons-sharp" id="close_button">cancel</span></a>
+
+                <a href="#" class="column col-xs-6" id ="caption">
+                <span class="text"><h2>Mr. George</h2></span><img src="images/sir-george.jpg"></a>
+
+                <h2><b class="bld-name">George Bersabe</b></h2>
+                <h5><b class="bld-name">Subject: RVE-302</b></h5>
+                <h3><b class="bld-name">Gender: Male</b></h3>
+                <h3><b class="bld-name">Email: george.bersabe@lccn.edu.ph</b></h3>
+                <br>
+                <h3><b class="bld-name">Bio: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos, doloremque!
+                    Rem perspiciatis, minus ullam porro obcaecati, ducimus architecto velit eius modi illo, 
+                    quasi delectus adipisci!</h3>
+                <br>
+
+            </div>
+
+            <!-- SOCIAL STUDIES 2 - USERS   -->
+
+            <div class="new-users">
+
+                <div class="user-list">
+
+                    <div class="user">
+                        <figure><img src="images/sir-josh.jpg"></figure>
+                        <h2><b class="bld-name">Mr. Joshua</b></h2>
+                        <p>Subject: PE-2</p>
+                        
+                        <br>
+                        <a href="#" onclick="toggle_joshua()" class="bn3">Details</a>
+                    </div>
+
+                    <div class="user">
+                        <figure><img src="images/maam-ivy.jpg"></figure>
+                        <h2><b class="bld-name">Maam Ivy</b></h2>
+                        <p>Subject: TRIGO-102</p>
+                        
+                        <br>
+                        <a href="#" onclick="toggle_ivy()" class="bn3">Details</a>
+                    </div>
+
+                    <div class="user">
+                        <figure><img src="images/sir-nesteve.jpg"></figure>
+                        <h2><b class="bld-name">Mr. Nesteve</b></h2>
+                        <p>Subject: COM-301</p>
+                        
+                        <br>
+                        <a href="#" onclick="toggle_nesteve()" class="bn3">Details</a>
+                    </div>
+
+                    </div>
+            </div>
+
+            <!-- SOCIAL STUDIES 2 - MODAL CONTENTS -->
+
+            <div id="joshua_popup">
+
+                <a href="#" onclick="toggle_joshua()"><span class="material-icons-sharp" id="close_button">cancel</span></a>
+
+                <a href="#" class="column col-xs-6" id ="caption">
+                <span class="text"><h2>Mr. Joshua</h2></span><img src="images/sir-josh.jpg"></a>
+
+                <h2><b class="bld-name">Joshua Neal Ramos</b></h2>
+                <h5><b class="bld-name">Subject: PE-2</b></h5>
+                <h3><b class="bld-name">Gender: Male</b></h3>
+                <h3><b class="bld-name">Email: joshua.neal.ramos@lccn.edu.ph</b></h3>
+                <br>
+                <h3><b class="bld-name">Bio: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos, doloremque!
+                    Rem perspiciatis, minus ullam porro obcaecati, ducimus architecto velit eius modi illo, 
+                    quasi delectus adipisci!</h3>
+                <br>
+
+            </div>
+
+            <div id="ivy_popup">
+
+                <a href="#" onclick="toggle_ivy()"><span class="material-icons-sharp" id="close_button">cancel</span></a>
+
+                <a href="#" class="column col-xs-6" id ="caption">
+                <span class="text"><h2>Maam Ivy</h2></span><img src="images/maam-ivy.jpg"></a>
+
+                <h2><b class="bld-name">Ivy Azur</b></h2>
+                <h5><b class="bld-name">Subject: TRIGO-102</b></h5>
+                <h3><b class="bld-name">Gender: Female</b></h3>
+                <h3><b class="bld-name">Email: ivy.azur@lccn.edu.ph</b></h3>
+                <br>
+                <h3><b class="bld-name">Bio: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos, doloremque!
+                    Rem perspiciatis, minus ullam porro obcaecati, ducimus architecto velit eius modi illo, 
+                    quasi delectus adipisci!</h3>
+                <br>
+
+            </div>
+
+            <div id="nesteve_popup">
+
+                <a href="#" onclick="toggle_nesteve()"><span class="material-icons-sharp" id="close_button">cancel</span></a>
+
+                <a href="#" class="column col-xs-6" id ="caption">
+                <span class="text"><h2>Mr. Nesteve</h2></span><img src="images/sir-nesteve.jpg"></a>
+
+                <h2><b class="bld-name">Nesteve Acebuche</b></h2>
+                <h5><b class="bld-name">Subject: COM-301</b></h5>
+                <h3><b class="bld-name">Gender: Male</b></h3>
+                <h3><b class="bld-name">Email: nesteve.acebuche@lccn.edu.ph</b></h3>
+                <br>
+                <h3><b class="bld-name">Bio: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos, doloremque!
+                    Rem perspiciatis, minus ullam porro obcaecati, ducimus architecto velit eius modi illo, 
+                    quasi delectus adipisci!</h3>
+                <br>
+
+        </main>
+
+        <!-- MAIN SECTION: END -->
+
+        <!-- RIGHT SECTION: START -->
+
+        <div class="right-section">
+            <div class="nav">
+                <button id="menu-btn">
+                    <span class="material-icons-sharp">
+                        menu
+                    </span>
+                </button>
+                <div class="dark-mode">
+                    <span class="material-icons-sharp active">
+                        light_mode
+                    </span>
+                    <span class="material-icons-sharp">
+                        dark_mode
+                    </span>
+                </div>
+
+                <div class="profile">
+                    <div class="info">
+                        <p>Hey, <b>Rye</b></p>
+                        <small class="text-muted">Good Day!</small>
+                    </div>
+                    <div class="profile-photo">
+                        <figure><img src="images/cs-rye.jpg"></figure>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="user-profile">
+                <div class="logo">
+                    <a href="#" class="column col-xs-6" id ="caption">
+                    <span class = "text"><h2>MARCELO</h2></span><img src ="images/sir-celo.jpg"></a>
+     
+                    <h2><b class="bld-name">Marcelo Batiduan III</b</h2>
+                    <h6><b class="bld-name">IT/CS Deaprtment</b></h6>
+                    <p><b class="bld-name">Gender: Male</b></p>
+                    <p><b class="bld-name">marcelo.batiduan@gmail.com</b></p>
+    
+                    <p><b class="bld-name">Bio: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Placeat beatae ratione doloribus maxime deleniti consequatur dolore veniam omnis odit voluptate?</b></p>
+                        
+                </div>
+            </div>
+
+        <!-- RIGHT SECTION: END -->
+
+
+    </div>
+
+    <script src="professors-student-dashboard.js"></script>
+</body>
+
+</html>

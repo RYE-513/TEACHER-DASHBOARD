@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="teacher-dashboard.css">
+    <link rel="shortcut icon" href="images/logo.png">
+    <title>My Students</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- SIDEBAR SECTION: START -->
+
+        <aside>
+            <div class="toggle">
+                <div class="logo">
+                    <img src="images/logo.png">
+                    <h2><b>Teacher</b><span class="danger"> Dashboard</span></h2>
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-icons-sharp">
+                        close
+                    </span>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <a href="teacher-dashboard.html" class="active" id="mate">
+                    <span class="material-icons-sharp">
+                        groups
+                    </span>
+                    <h3>Students</h3>
+                </a>
+
+                <a href="professor-teacher-dashboard.html">
+                    <span class="material-symbols-outlined">
+                        supervisor_account
+                    </span>
+                    <h3>Teachers</h3>
+                </a>
+
+                <a href="attendance-teacher-dashboard.html">
+                    <span class="material-symbols-outlined">
+                        tv_options_edit_channels
+                    </span>
+                    <h3>Student Attendance</h3>
+                </a>
+
+                <a href="grades-teacher-dashboard.html">
+                    <span class="material-symbols-outlined">
+                        trending_up
+                    </span>
+                    <h3>Student Grades</h3>
+                </a>
+
+                <a href="">
+                    <span class="material-icons-sharp">
+                        logout
+                    </span>
+                    <h3>Logout</h3>
+                </a>
+
+            </div>
+        </aside>
+
+        <!-- SIDEBAR SECTION: END -->
+
+        <!-- MAIN SECTION: START -->
+
+        <main>
+
+            <h1  class="font-effects-underline"><b class="bld-name">My Students</b></h1>
+
+            <div class="new-users">
+
+                <!-- BSCS CLASSMATES -->
+
+                <h4 style="text-align: center;"><b>BS Computer Science</b></h4>
+                <div class="user-list">
+
+                    <div class="user" id="blurred">
+                        <figure><img src="images/cs-owen.jpg"></figure>
+                        <h2><b class="bld-name">Owen</b></h2>
+                        <p>Course: BSCS</p>
+                        <p>Age: 21</p>
+
+                        <br>
+                        <a href="#" onclick="toggle_owen()" class="bn3">Details</a>
+                    </div>
+
+                    <div class="user">
+                        <figure><img src="images/cs-dylan.jpg"></figure>
+                        <h2><b class="bld-name">Dylan</b></h2>
+                        <p>Course: BSCS</p>
+                        <p>Age: 21</p>
+
+                        <br>
+                        <a href="#" onclick="toggle_dylan()" class="bn3">Details</a>
+                    </div>
+
+                    <div class="user">
+                        <figure><img src="images/none.jpg"></figure>
+                        <h2><b class="bld-name">Dropout</b></h2>
+                        <p>Course: BSCS</p>
+                        <p>Age: 20</p>
+
+                        <br>
+                        <a href="#" onclick="toggle_dropout()" class="bn3">Details</a>
+                    </div>
+                </div>
+
+            <!-- BSCS POPUP CONTENTS -->
+
+            <div id="owen_popup">
+
+                <a href="#" onclick="toggle_owen()"><span class="material-icons-sharp" id="close_button">cancel</span></a>
+
+                <a href="#" class="column col-xs-6" id ="caption">
+                <span class="text"><h2>OWEN</h2></span><img src="images/cs-owen.jpg"></a>
+
+                <h2><b class="bld-name">Owen Sante, 21</b></h2>
+                <h5><b class="bld-name">Course: BS Computer Science</b></h5>
+                <h3><b class="bld-name">Gender: Male</b></h3>
+                <h3><b class="bld-name">Email: owen.sante@lccn.edu.ph</b></h3>
+                <br>
+                <h3><b class="bld-name">Bio: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos, doloremque!
+                    Rem perspiciatis, minus ullam porro obcaecati, ducimus architecto velit eius modi illo, 
+                    quasi delectus adipisci!</h3>
+                <br>
+
+            </div>
+
+            <div id="dylan_popup">
+
+                <a href="#" onclick="toggle_dylan()"><span class="material-icons-sharp" id="close_button">cancel</span></a>
+
+                <a href="#" class="column col-xs-6" id ="caption">
+                <span class="text"><h2>DYLAN</h2></span><img src ="images/cs-dylan.jpg"></a>
+
+                <h2><b class="bld-name">Dylan Lagrimas, 21</b></h2>
+                <h5><b class="bld-name">Course: BS Computer Science</b></h5>
+                <h3><b class="bld-name">Gender: Male</b></h3>
+                <h3><b class="bld-name">Email: dylan.lagrimas@lccn.edu.ph</b></h3>
+                <br>
+                <h3><b class="bld-name">Bio: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos, doloremque!
+                    Rem perspiciatis, minus ullam porro obcaecati, ducimus architecto velit eius modi illo, 
+                    quasi delectus adipisci!</h3>
+
+                <br>
+
+            </div>
+
+            <div id="dropout_popup">
+
+                <a href="#" onclick="toggle_dropout()"><span class="material-icons-sharp" id="close_button">cancel</span></a>
+
+                <a href="#" class="column col-xs-6" id ="caption">
+                <span class="text"><h2>?</h2></span><img src ="images/none.jpg"></a>
+
+                <h2><b class="bld-name">Dropout</b></h2>
+                <h5><b class="bld-name">Course: BS Computer Science</b></h5>
+                <h3><b class="bld-name">Gender: Male</b></h3>
+                <h3><b class="bld-name">Email: dropout.student@lccn.edu.ph</b></h3>
+                <br>
+                <h3><b class="bld-name">Bio: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos, doloremque!
+                    Rem perspiciatis, minus ullam porro obcaecati, ducimus architecto velit eius modi illo, 
+                    quasi delectus adipisci!</h3>
+
+                <br>
+            
+            </div>
+
+            <!-- BSIT CLASSMATES -->
+
+            <div class="new-users">
+
+                <h4 style="text-align: center;"><b>BS Information Technology</b></h4>
+                <div class="user-list">
+
+                    <div class="user" id="blur">
+                        <figure><img src="images/it-aj.jpg"></figure>
+                        <h2><b class="bld-name">AJ</b></h2>
+                        <p>Course: BSIT</p>
+                        <p>Age: 21</p>
+
+                        <br>
+                        <a href="#" onclick="toggle_aj()" class="bn3">Details</a>
+                    </div>
+
+                    
+                    <div class="user">
+                    <figure><img src="images/it-la.jpg"></figure>
+                        <h2><b class="bld-name">Louis</b></h2>
+                        <p>Course: BSIT</p>
+                        <p>Age: 22</p>
+
+                        <br>
+                        <a href="#" onclick="toggle_la()" class="bn3">Details</a>
+                    </div>
+
+                    <div class="user">
+                        <figure><img src="images/it-steven.jpg"></figure>
+                        <h2><b class="bld-name">Steven</b></h2>
+                        <p>Course: BSIT</p>
+                        <p>Age: 20</p>
+
+                        <br>
+                        <a href="#" onclick="toggle_steven()" class="bn3">Details</a>
+                    </div>
+
+                </div>
+
+            <!-- BSIT 1 POPUP CONTENTS -->
+
+            <div id="aj_popup">
+
+                <a href="#" onclick="toggle_aj()"><span class="material-icons-sharp" id="close_button">cancel</span></a>
+
+                <a href="#" class="column col-xs-6" id ="caption">
+                <span class="text"><h2>AJ</h2></span><img src="images/it-aj.jpg"></a>
+
+                <h2><b class="bld-name">AJ Legaspi, 21</b></h2>
+                <h5><b class="bld-name">Course: BS Information Technology</b></h5>
+                <h3><b class="bld-name">Gender: Male</b></h3>
+                <h3><b class="bld-name">Email: aj.legaspi@lccn.edu.ph</b></h3>
+                <br>
+                <h3><b class="bld-name">Bio: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos, doloremque!
+                    Rem perspiciatis, minus ullam porro obcaecati, ducimus architecto velit eius modi illo, 
+                    quasi delectus adipisci!</h3>
+                <br>
+
+            </div>
+
+            <div id="la_popup">
+
+                <a href="#" onclick="toggle_la()"><span class="material-icons-sharp" id="close_button">cancel</span></a>
+
+                <a href="#" class="column col-xs-6" id ="caption">
+                <span class="text"><h2>LOUIS</h2></span><img src="images/it-la.jpg"></a>
+
+                <h2><b class="bld-name">Louis Ampoloquio, 21</b></h2>
+                <h5><b class="bld-name">Course: BS Information Technology</b></h5>
+                <h3><b class="bld-name">Gender: Male</b></h3>
+                <h3><b class="bld-name">Email: louis.ampoloquio@lccn.edu.ph</b></h3>
+                <br>
+                <h3><b class="bld-name">Bio: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos, doloremque!
+                    Rem perspiciatis, minus ullam porro obcaecati, ducimus architecto velit eius modi illo, 
+                    quasi delectus adipisci!</h3>
+                <br>
+
+            </div>
+
+            <div id="steven_popup">
+
+                <a href="#" onclick="toggle_steven()"><span class="material-icons-sharp" id="close_button">cancel</span></a>
+
+                <a href="#" class="column col-xs-6" id ="caption">
+                <span class="text"><h2>STEVEN</h2></span><img src="images/it-steven.jpg"></a>
+
+                <h2><b class="bld-name">Steven Claude Salagubang, 21</b></h2>
+                <h5><b class="bld-name">Course: BS Information Technology</b></h5>
+                <h3><b class="bld-name">Gender: Male</b></h3>
+                <h3><b class="bld-name">Email: steven.claude.salagubang@lccn.edu.ph</b></h3>
+                <br>
+                <h3><b class="bld-name">Bio: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos, doloremque!
+                    Rem perspiciatis, minus ullam porro obcaecati, ducimus architecto velit eius modi illo, 
+                    quasi delectus adipisci!</h3>
+                <br>
+
+            </div>
+
+            <!-- BSIT 2 CLASSMATES -->
+
+            <div class="new-users">
+
+                <div class="user-list">
+
+                    <div class="user">
+                        <figure><img src="images/it-apol.jpg"></figure>
+                        <h2><b class="bld-name">Angelo</b></h2>
+                        <p>Course: BSCS</p>
+                        <p>Age: 20</p>
+                        
+                        <br>
+                        <a href="#" onclick="toggle_angelo()" class="bn3">Details</a>
+                    </div>
+
+                    <div class="user">
+                        <figure><img src="images/it-fia.jpg"></figure>
+                        <h2><b class="bld-name">Sofia</b></h2>
+                        <p>Course: BSCS</p>
+                        <p>Age: 20</p>
+                        
+                        <br>
+                        <a href="#" onclick="toggle_sofia()" class="bn3">Details</a>
+                    </div>
+
+                    <div class="user">
+                        <figure><img src="images/it-baui.jpg"></figure>
+                        <h2><b class="bld-name">Aaron</b></h2>
+                        <p>Course: BSIT</p>
+                        <p>Age: 20</p>
+                        
+                        <br>
+                        <a href="#" onclick="toggle_baui()" class="bn3">Details</a>
+                    </div>
+
+                    <div class="user">
+                        <figure><img src="images/it-andeng.jpg"></figure>
+                        <h2><b class="bld-name">Andrea</b></h2>
+                        <p>Course: BSIT</p>
+                        <p>Age: 21</p>
+                        
+                        <br>
+                        <a href="#" onclick="toggle_andrea()" class="bn3">Details</a>
+                    </div>
+
+                    </div>
+            </div>
+
+            <!-- BSIT 2 POPUP CONTENTS -->
+
+            <div id="angelo_popup">
+
+                <a href="#" onclick="toggle_angelo()"><span class="material-icons-sharp" id="close_button">cancel</span></a>
+
+                <a href="#" class="column col-xs-6" id ="caption">
+                <span class="text"><h2>ANGELO</h2></span><img src="images/it-apol.jpg"></a>
+
+                <h2><b class="bld-name">Angelo Apolonio, 21</b></h2>
+                <h5><b class="bld-name">Course: BS Information Technology</b></h5>
+                <h3><b class="bld-name">Gender: Male</b></h3>
+                <h3><b class="bld-name">Email: angelo.apolonio@lccn.edu.ph</b></h3>
+                <br>
+                <h3><b class="bld-name">Bio: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos, doloremque!
+                    Rem perspiciatis, minus ullam porro obcaecati, ducimus architecto velit eius modi illo, 
+                    quasi delectus adipisci!</h3>
+                <br>
+
+            </div>
+
+            <div id="sofia_popup">
+
+                <a href="#" onclick="toggle_sofia()"><span class="material-icons-sharp" id="close_button">cancel</span></a>
+
+                <a href="#" class="column col-xs-6" id ="caption">
+                <span class="text"><h2>SOFIA</h2></span><img src="images/it-fia.jpg"></a>
+
+                <h2><b class="bld-name">Sofia Nicole Estaña, 21</b></h2>
+                <h5><b class="bld-name">Course: BS Information Technology</b></h5>
+                <h3><b class="bld-name">Gender: Female</b></h3>
+                <h3><b class="bld-name">Email: sofia.nicole.estana@lccn.edu.ph</b></h3>
+                <br>
+                <h3><b class="bld-name">Bio: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos, doloremque!
+                    Rem perspiciatis, minus ullam porro obcaecati, ducimus architecto velit eius modi illo, 
+                    quasi delectus adipisci!</h3>
+                <br>
+
+            </div>
+
+            <div id="baui_popup">
+
+                <a href="#" onclick="toggle_baui()"><span class="material-icons-sharp" id="close_button">cancel</span></a>
+
+                <a href="#" class="column col-xs-6" id ="caption">
+                <span class="text"><h2>AARON</h2></span><img src="images/it-baui.jpg"></a>
+
+                <h2><b class="bld-name">Aaron James Baui, 21</b></h2>
+                <h5><b class="bld-name">Course: BS Information Technology</b></h5>
+                <h3><b class="bld-name">Gender: Male</b></h3>
+                <h3><b class="bld-name">Email: aaron.james.baui@lccn.edu.ph</b></h3>
+                <br>
+                <h3><b class="bld-name">Bio: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos, doloremque!
+                    Rem perspiciatis, minus ullam porro obcaecati, ducimus architecto velit eius modi illo, 
+                    quasi delectus adipisci!</h3>
+                <br>
+
+            </div>
+
+            <div id="andrea_popup">
+
+                <a href="#" onclick="toggle_andrea()"><span class="material-icons-sharp" id="close_button">cancel</span></a>
+
+                <a href="#" class="column col-xs-6" id ="caption">
+                <span class="text"><h2>ANDREA</h2></span><img src="images/it-andeng.jpg"></a>
+
+                <h2><b class="bld-name">Andrea Sadsad, 21</b></h2>
+                <h5><b class="bld-name">Course: BS Information Technology</b></h5>
+                <h3><b class="bld-name">Gender: Female</b></h3>
+                <h3><b class="bld-name">Email: andrea.sadsad@lccn.edu.ph</b></h3>
+                <br>
+                <h3><b class="bld-name">Bio: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos, doloremque!
+                    Rem perspiciatis, minus ullam porro obcaecati, ducimus architecto velit eius modi illo, 
+                    quasi delectus adipisci!</h3>
+                <br>
+
+        </main>
+
+        <!-- MAIN SECTION: END -->
+
+        <!-- RIGHT SECTION: START -->
+
+        <div class="right-section">
+            <div class="nav">
+                <button id="menu-btn">
+                    <span class="material-icons-sharp">
+                        menu
+                    </span>
+                </button>
+                <div class="dark-mode">
+                    <span class="material-icons-sharp active">
+                        light_mode
+                    </span>
+                    <span class="material-icons-sharp">
+                        dark_mode
+                    </span>
+                </div>
+
+                <div class="profile">
+                    <div class="info">
+                        <p>Hey, <b>Marcelo</b></p>
+                        <small class="text-muted">Good Day!</small>
+                    </div>
+                    <div class="profile-photo">
+                        <figure><img src="images/cs-rye.jpg"></figure>
+                    </div>
+                </div>
+
+            </div>
+
+        <div class="user-profile">
+            <div class="logo">
+                <a href="#" class="column col-xs-6" id ="caption">
+                <span class = "text"><h2>MARCELO</h2></span><img src ="images/sir-celo.jpg"></a>
+ 
+                <h2><b class="bld-name">Marcelo Batiduan III</b</h2>
+                <h6><b class="bld-name">IT/CS Deaprtment</b></h6>
+                <p><b class="bld-name">Gender: Male</b></p>
+                <p><b class="bld-name">marcelo.batiduan@gmail.com</b></p>
+
+                <p><b class="bld-name">Bio: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Placeat beatae ratione doloribus maxime deleniti consequatur dolore veniam omnis odit voluptate?</b></p>
+                    
+            </div>
+        </div>
+
+        <!-- RIGHT SECTION: END -->
+
+
+    </div>
+
+    <script src="teacher-dashboard.js"></script>
+</body>
+
+</html>
