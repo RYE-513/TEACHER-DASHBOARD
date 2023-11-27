@@ -1,46 +1,90 @@
 const Orders = [
     {
-        productName: 'Information Assurance and Security',
-        productNumber: 'IAS-02',
-        paymentStatus: 'Mr. Eser Fernandez',
-        status: ''
+        productName: '1. Briz, John Ryan',
+        productNumber: 'BSCS',
+        paymentStatus: '9',
+        status: 'Yes',
+        status2: 'Yes'
     },
 
     {
-        productName: 'Human Computer Interaction',
-        productNumber: 'HCI-101',
-        paymentStatus: 'Mr. Jhay Ibañez',
-        status: ''
+        productName: '2. Eusebio, Marco Gian',
+        productNumber: 'BSCS',
+        paymentStatus: '0',
+        status: 'No',
+        status2: 'No'
     },
 
     {
-        productName: 'Intelligent System',
-        productNumber: 'ELEC-2',
-        paymentStatus: 'Mr. Jhay Ibañez',
-        status: ''
+        productName: '3. Lagrimas, Dylan',
+        productNumber: 'BSCS',
+        paymentStatus: '5',
+        status: 'Yes',
+        status2: 'Yes'
     },
 
     {
-        productName: 'Parallel Distribution and Concept',
-        productNumber: 'ELEC-3',
-        paymentStatus: 'Mr. Engelmar Malabanan',
-        status: ''
+        productName: '4. Sante, Owen',
+        productNumber: 'BSCS',
+        paymentStatus: '7',
+        status: 'Yes',
+        status2: 'Yes'
     },
 
     {
-        productName: 'Social Issues and Professional Practice',
-        productNumber: 'SP-101',
-        paymentStatus: 'Mr. Marcelo Batiduan III',
-        status: ''
+        productName: '5. Ampoloquio, Louis',
+        productNumber: 'BSIT',
+        paymentStatus: '9',
+        status: 'Yes',
+        status2: 'Yes'
     },
 
     {
-        productName: 'THESIS 2',
-        productNumber: 'THS-102',
-        paymentStatus: 'Mr. Marcelo Batiduan III',
-        status: ''
+        productName: '6. Apolonio, Angelo',
+        productNumber: 'BSIT',
+        paymentStatus: '5',
+        status: 'Yes',
+        status2: 'Yes'
     },
-   
 
+    {
+        productName: '7. Baui, Aaron James',
+        productNumber: 'BSIT',
+        paymentStatus: '9',
+        status: 'Yes',
+        status2: 'Yes'
+    },
+
+    {
+        productName: '8. Estaña, Sofia Nicole',
+        productNumber: 'BSIT',
+        paymentStatus: '9',
+        status: 'Yes',
+        status2: 'Yes'
+    },
+
+    {
+        productName: '9. Legaspi, AJ',
+        productNumber: 'BSIT',
+        paymentStatus: '9',
+        status: 'Yes',
+        status2: 'Yes'
+    },
+
+    {
+        productName: '10. Sadsad, Andrea Louise',
+        productNumber: 'BSIT',
+        paymentStatus: '9',
+        status: 'Yes',
+        status2: 'Yes'
+    },
+
+    {
+        productName: '11. Salagubang, Steven Claude',
+        productNumber: 'BSIT',
+        paymentStatus: '9',
+        status: 'Yes',
+        status2: 'Yes'
+    },
 
 ]

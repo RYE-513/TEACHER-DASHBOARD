@@ -26,6 +26,15 @@ Orders.forEach(order => {
         <td>${order.productNumber}</td>
         <td>${order.paymentStatus}</td>
         <td class="${order.status === 'Dropout' ? 'danger' : order.status === 'Pending' ? 'warning' : 'primary'}">${order.status}</td>
+        <td class="${order.status2 === 'Dropout' ? 'danger' : order.status2 === 'Pending' ? 'warning' : 'primary'}">${order.status2}</td>
+
+        <td class="${order.status === 'Dropout' ? 'danger' : order.status === 'Pending' ? 'warning' : 'primary'}">${order.status}</td>
+        <td class="${order.status === 'Dropout' ? 'danger' : order.status === 'Pending' ? 'warning' : 'primary'}">${order.status}</td>
+        <td class="${order.status === 'Dropout' ? 'danger' : order.status === 'Pending' ? 'warning' : 'primary'}">${order.status}</td>
+        <td class="${order.status === 'Dropout' ? 'danger' : order.status === 'Pending' ? 'warning' : 'primary'}">${order.status}</td>
+        <td class="${order.status === 'Dropout' ? 'danger' : order.status === 'Pending' ? 'warning' : 'primary'}">${order.status}</td>
+        <td class="${order.status === 'Dropout' ? 'danger' : order.status === 'Pending' ? 'warning' : 'primary'}">${order.status}</td>
+        <td class="${order.status === 'Dropout' ? 'danger' : order.status === 'Pending' ? 'warning' : 'primary'}">${order.status}</td>
     `;
     tr.innerHTML = trContent;
     document.querySelector('table tbody').appendChild(tr);
