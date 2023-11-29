@@ -26,8 +26,8 @@ Orders.forEach(order => {
         <td>${order.productNumber}</td>
         <td>${order.paymentStatus}</td>
         <td class="${order.status === 'Dropout' ? 'danger' : order.status === 'Pending' ? 'warning' : 'primary'}">${order.status}</td>
-        <td class="${order.status2 === 'Dropout' ? 'danger' : order.status2 === 'Pending' ? 'warning' : 'primary'}">${order.status2}</td>
 
+        <td class="${order.status === 'Dropout' ? 'danger' : order.status === 'Pending' ? 'warning' : 'primary'}">${order.status}</td>
         <td class="${order.status === 'Dropout' ? 'danger' : order.status === 'Pending' ? 'warning' : 'primary'}">${order.status}</td>
         <td class="${order.status === 'Dropout' ? 'danger' : order.status === 'Pending' ? 'warning' : 'primary'}">${order.status}</td>
         <td class="${order.status === 'Dropout' ? 'danger' : order.status === 'Pending' ? 'warning' : 'primary'}">${order.status}</td>
@@ -43,6 +43,16 @@ Orders.forEach(order => {
 /* ===============  POPUP  =============== */
 
 /* =============== BSCS POPUP =============== */
+
+// RYE TOGGLE
+
+function toggle_rye() {
+    var blur = document.getElementById('blur')
+    blur.classList.toggle('active')
+
+    var popup = document.getElementById('rye_popup')
+    popup.classList.toggle('active')
+}
 
 // OWEN TOGGLE
 

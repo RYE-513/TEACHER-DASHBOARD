@@ -76,7 +76,7 @@
 
         <main>
 
-            <h1  class="font-effects-underline"><b class="bld-name">My Students</b></h1>
+            <h1  class="font-effects-underline-myStudents"><b class="bld-name">My Students</b></h1>
 
             <div class="new-users">
 
@@ -86,6 +86,16 @@
                 <div class="user-list">
 
                     <div class="user" id="blurred">
+                        <figure><img src="images/cs-rye.jpg"></figure>
+                        <h2><b class="bld-name">Ryan</b></h2>
+                        <p>Course: BSCS</p>
+                        <p>Age: 22</p>
+
+                        <br>
+                        <a href="#" onclick="toggle_rye()" class="bn3">Details</a>
+                    </div>
+
+                    <div class="user">
                         <figure><img src="images/cs-owen.jpg"></figure>
                         <h2><b class="bld-name">Owen</b></h2>
                         <p>Course: BSCS</p>
@@ -117,6 +127,25 @@
                 </div>
 
             <!-- BSCS POPUP CONTENTS -->
+
+            <div id="rye_popup">
+
+                <a href="#" onclick="toggle_rye()"><span class="material-icons-sharp" id="close_button">cancel</span></a>
+
+                <a href="#" class="column col-xs-6" id ="caption">
+                <span class="text"><h2>Rye</h2></span><img src="images/cs-rye.jpg"></a>
+
+                <h2><b class="bld-name">John Ryan Briz, 22</b></h2>
+                <h5><b class="bld-name">Course: BS Computer Science</b></h5>
+                <h4><b class="bld-name">Grade: 1.00</b></h4>
+                <h4><b class="bld-name">Status: Passed</b></h4>
+                <br>
+                <h3><b class="bld-name">Gender: Male</b></h3>
+                <h3><b class="bld-name">Email: john.ryan.briz@lccn.edu.ph</b></h3>
+                <h3><b class="bld-name">Bio: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos, doloremque!</h3>
+                <br>
+
+            </div>
 
             <div id="owen_popup">
 

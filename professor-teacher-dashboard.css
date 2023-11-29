@@ -631,137 +631,36 @@ main .recent-orders a{
     color: var(--color-danger);
 }
 
-/* HOVER FONTS EFFECTS */
+/* TEACHERS  - HOVER FONTS EFFECTS */
 
-.font-effects-underline {
-  color: var(--color-info-dark);
-  position: relative;
-  text-decoration: none;
-}
-
-.font-effects-underline::before {
-  content: '';
-  position: absolute;
-  width: 17%;
-  height: 4px;
-  border-radius: 4px;
-  background-color: var(--color-info-dark);
-  bottom: 0;
-  left: 0;
-  transform-origin: right;
-  transform: scaleX(0);
-  transition: transform .3s ease-in-out;
-}
-
-.font-effects-underline:hover::before {
-  transform-origin: left;
-  transform: scaleX(1);
-}
+.font-effects-underline-teachers {
+    color: var(--color-info-dark);
+    position: relative;
+    text-decoration: none;
+  }
+  
+.font-effects-underline-teachers::before {
+    content: '';
+    position: absolute;
+    width: 13%;
+    height: 4px;
+    border-radius: 4px;
+    background-color: var(--color-info-dark);
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+  }
+  
+.font-effects-underline-teachers:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+  }
 
 /* =============== IT/CS DEPARTMENT MODAL =============== */
 
-/* SIR MARCELO - MODAL */
-
-#marcelo_popup {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 700px;
-    padding: 25px 50px 35px 30px;
-    border-radius: 30px;
-    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.30);
-    background: #fff;
-    visibility: hidden;
-    opacity: 0;
-    transition: 0.5s;
-    color: var(--color-mid-dark);
-    background-color: var(--color-background);
-}
-
-
-#marcelo_popup img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    overflow: hidden;
-    float: left;
-    border: 2px solid black;
-    margin-right: 30px;
-    margin-left: 20px;
-}
-
-#marcelo_popup.active {
-    top: 50%;
-    visibility: visible;
-    opacity: 1;
-    transition: 0.5s;
-}
-
-#marcelo_popup h3 {
-    font-size: 12px;
-    background-color: var(--color-background);
-}
-
-#marcelo_popup h4 {
-    font-weight: 600;
-    color: var(--color-passed);
-}
-
-#marcelo_popup h5 {
-    font-size: 12px;
-    font-weight: 600;
-    background-color: var(--color-background);
-
-}
-
-/* SIR MARCELO - MODAL (HOVER EFFECTS) */
-
-#marcelo_popup .column {
-	display:block;
-	text-align: center;
-}
-
-#marcelo_popup .column#caption {
-	position: relative;
-}
-
-#marcelo_popup .column#caption .text {
-    position: absolute;		
-    top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	z-index: 10;
-    opacity: 0;
-    transition: all 0.8s ease;			
-}
-
-#marcelo_popup .column#caption .text {
-    position: absolute;		
-    top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	z-index: 10;
-    opacity: 0;
-    transition: all 0.8s ease;
-}
-
-#marcelo_popup .column#caption .text h2 {		
-	margin: 180px 430px -165px 50px;
-	color: white;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-#marcelo_popup .column#caption:hover .text {
-	opacity: 1;
-}
-
-#marcelo_popup .column#caption:hover img {
-	-webkit-filter: blur(1px);
-    -webkit-filter: brightness(0.7);
-}
-
-/* SIR MARCELO - MODAL */
+/* SIR ESER - MODAL */
 
 #eser_popup {
     position: fixed;

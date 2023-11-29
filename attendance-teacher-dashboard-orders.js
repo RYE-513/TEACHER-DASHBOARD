@@ -4,7 +4,6 @@ const Orders = [
         productNumber: 'BSCS',
         paymentStatus: '9',
         status: 'Yes',
-        status2: 'Yes'
     },
 
     {
@@ -12,7 +11,6 @@ const Orders = [
         productNumber: 'BSCS',
         paymentStatus: '0',
         status: 'No',
-        status2: 'No'
     },
 
     {
@@ -20,7 +18,6 @@ const Orders = [
         productNumber: 'BSCS',
         paymentStatus: '5',
         status: 'Yes',
-        status2: 'Yes'
     },
 
     {
@@ -28,7 +25,6 @@ const Orders = [
         productNumber: 'BSCS',
         paymentStatus: '7',
         status: 'Yes',
-        status2: 'Yes'
     },
 
     {
@@ -36,7 +32,6 @@ const Orders = [
         productNumber: 'BSIT',
         paymentStatus: '9',
         status: 'Yes',
-        status2: 'Yes'
     },
 
     {
@@ -44,7 +39,6 @@ const Orders = [
         productNumber: 'BSIT',
         paymentStatus: '5',
         status: 'Yes',
-        status2: 'Yes'
     },
 
     {
@@ -52,7 +46,6 @@ const Orders = [
         productNumber: 'BSIT',
         paymentStatus: '9',
         status: 'Yes',
-        status2: 'Yes'
     },
 
     {
@@ -60,7 +53,6 @@ const Orders = [
         productNumber: 'BSIT',
         paymentStatus: '9',
         status: 'Yes',
-        status2: 'Yes'
     },
 
     {
@@ -68,7 +60,6 @@ const Orders = [
         productNumber: 'BSIT',
         paymentStatus: '9',
         status: 'Yes',
-        status2: 'Yes'
     },
 
     {
@@ -76,7 +67,6 @@ const Orders = [
         productNumber: 'BSIT',
         paymentStatus: '9',
         status: 'Yes',
-        status2: 'Yes'
     },
 
     {
@@ -84,7 +74,6 @@ const Orders = [
         productNumber: 'BSIT',
         paymentStatus: '9',
         status: 'Yes',
-        status2: 'Yes'
     },
 
 ]

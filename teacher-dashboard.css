@@ -560,7 +560,7 @@ main .recent-orders a{
     color: var(--color-mid-dark);
 }
 
-/* RYE-CAPTION HOVER EFFECTS */
+/* MARCELO-CAPTION HOVER EFFECTS */
 
 .user-profile .column {
 	display:block;
@@ -582,8 +582,8 @@ main .recent-orders a{
 }
 
 .user-profile .column#caption .text h2 {	
-    font-size: 40px;	
-	margin:-20px 50px -165px 50px;
+    font-size: 25px;	
+	margin:50px 50px -165px 50px;
 	color: whitesmoke;
 }
 
@@ -633,15 +633,15 @@ main .recent-orders a{
     color: var(--color-danger);
 }
 
-/* HOVER FONTS EFFECTS */
+/* MY STUDENTS - HOVER FONTS EFFECTS */
 
-.font-effects-underline {
+.font-effects-underline-myStudents {
   color: var(--color-info-dark);
   position: relative;
   text-decoration: none;
 }
 
-.font-effects-underline::before {
+.font-effects-underline-myStudents::before {
   content: '';
   position: absolute;
   width: 17%;
@@ -655,12 +655,167 @@ main .recent-orders a{
   transition: transform .3s ease-in-out;
 }
 
-.font-effects-underline:hover::before {
+.font-effects-underline-myStudents:hover::before {
   transform-origin: left;
   transform: scaleX(1);
 }
 
+/* STUDENT ATTENDANCE - HOVER FONTS EFFECTS */
+
+.font-effects-underline-studentAttendance {
+    color: var(--color-info-dark);
+    position: relative;
+    text-decoration: none;
+  }
+  
+  .font-effects-underline-studentAttendance::before {
+    content: '';
+    position: absolute;
+    width: 28%;
+    height: 4px;
+    border-radius: 4px;
+    background-color: var(--color-info-dark);
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+  }
+  
+  .font-effects-underline-studentAttendance:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+  }
+
+/* STUDENT GRADES - HOVER FONTS EFFECTS */
+
+.font-effects-underline-studentGrades {
+    color: var(--color-info-dark);
+    position: relative;
+    text-decoration: none;
+  }
+  
+  .font-effects-underline-studentGrades::before {
+    content: '';
+    position: absolute;
+    width: 22%;
+    height: 4px;
+    border-radius: 4px;
+    background-color: var(--color-info-dark);
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+  }
+  
+  .font-effects-underline-studentGrades:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+  }
+
 /* =============== BSCS POPUP =============== */
+
+/* RYE POPUP */
+
+#rye_popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 700px;
+    padding: 25px 50px 35px 30px;
+    border-radius: 30px;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.30);
+    background: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    color: var(--color-mid-dark);
+    background-color: var(--color-background);
+}
+
+
+#rye_popup img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    float: left;
+    border: 2px solid black;
+    margin-right: 30px;
+    margin-left: 20px;
+}
+
+#rye_popup.active {
+    top: 50%;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+#rye_popup h3 {
+    font-size: 12px;
+    background-color: var(--color-background);
+}
+
+#rye_popup h4 {
+    font-weight: 600;
+    color: var(--color-passed);
+}
+
+#rye_popup h5 {
+    font-size: 12px;
+    font-weight: 600;
+    background-color: var(--color-background);
+
+}
+
+/* OWEN-CAPTION HOVER EFFECTS */
+
+#rye_popup .column {
+	display:block;
+	text-align: center;
+}
+
+#rye_popup .column#caption {
+	position: relative;
+}
+
+#rye_popup .column#caption .text {
+    position: absolute;		
+    top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 10;
+    opacity: 0;
+    transition: all 0.8s ease;			
+}
+
+#rye_popup .column#caption .text {
+    position: absolute;		
+    top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 10;
+    opacity: 0;
+    transition: all 0.8s ease;
+}
+
+#rye_popup .column#caption .text h2 {		
+	margin: 180px 430px -165px 50px;
+	color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#rye_popup .column#caption:hover .text {
+	opacity: 1;
+}
+
+#rye_popup .column#caption:hover img {
+	-webkit-filter: blur(1px);
+    -webkit-filter: brightness(0.7);
+}
 
 /* OWEN POPUP */
 

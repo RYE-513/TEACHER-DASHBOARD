@@ -22,110 +22,125 @@ darkMode.addEventListener('click', () => {
 Orders.forEach(order => {
     const tr = document.createElement('tr');
     const trContent = `
-        <td>${order.productName}</td>
-        <td>${order.productNumber}</td>
-        <td>${order.paymentStatus}</td>
-        <td class="${order.status === 'Dropout' ? 'danger' : order.status === 'Pending' ? 'warning' : 'primary'}">${order.status}</td>
+        <td>${order.studentName}</td>
+        <td>${order.course}</td>
+        <td>${order.prelimExam}</td>
+        <td>${order.midtermExam}</td>
+        <td>${order.finalExam}</td>
+
+        <td class="${order.grades === 'Dropout' ? 'danger' : order.grades === 'Pending' ? 'warning' : 'primary'}">${order.grades}</td>
     `;
     tr.innerHTML = trContent;
     document.querySelector('table tbody').appendChild(tr);
+
+
 });
 
-/* ===============  MODAL  =============== */
 
-/* =============== IT/CS DEPARTMENT - MODAL =============== */
+/* ===============  POPUP  =============== */
 
-// SIR ESER - TOGGLE
+/* =============== BSCS POPUP =============== */
 
-function toggle_eser() {
+// OWEN TOGGLE
+
+function toggle_owen() {
     var blur = document.getElementById('blur')
     blur.classList.toggle('active')
 
-    var popup = document.getElementById('eser_popup')
+    var popup = document.getElementById('owen_popup')
     popup.classList.toggle('active')
 }
 
-// SIR JHAY - TOGGLE
+// DYLAN TOGGLE
 
-function toggle_jhay() {
+function toggle_dylan() {
     var blur = document.getElementById('blur')
     blur.classList.toggle('active')
 
-    var popup = document.getElementById('jhay_popup')
+    var popup = document.getElementById('dylan_popup')
     popup.classList.toggle('active')
 }
 
-// SIR MAR - TOGGLE
+// DROPOUT TOGGLE
 
-function toggle_mar() {
+function toggle_dropout() {
     var blur = document.getElementById('blur')
     blur.classList.toggle('active')
 
-    var popup = document.getElementById('mar_popup')
+    var popup = document.getElementById('dropout_popup')
     popup.classList.toggle('active')
 }
 
-/* =============== SOCIAL STUDIES DEPARTMENT - MODAL =============== */
+/* =============== BSIT 1 POPUP =============== */
 
-// SIR DE GUZMAN - TOGGLE
+// AJ TOGGLE
 
-function toggle_dg() {
+function toggle_aj() {
     var blur = document.getElementById('blur')
     blur.classList.toggle('active')
 
-    var popup = document.getElementById('dg_popup')
+    var popup = document.getElementById('aj_popup')
     popup.classList.toggle('active')
 }
 
-// MAAM CIELO - TOGGLE
+// LA TOGGLE
 
-function toggle_cielo() {
+function toggle_la() {
     var blur = document.getElementById('blur')
     blur.classList.toggle('active')
 
-    var popup = document.getElementById('cielo_popup')
+    var popup = document.getElementById('la_popup')
     popup.classList.toggle('active')
 }
 
-// SIR GEORGE - TOGGLE
+// STEVEN TOGGLE
 
-function toggle_george() {
+function toggle_steven() {
     var blur = document.getElementById('blur')
     blur.classList.toggle('active')
 
-    var popup = document.getElementById('george_popup')
+    var popup = document.getElementById('steven_popup')
     popup.classList.toggle('active')
 }
 
 /* =============== BSIT 2 POPUP =============== */
 
-// SIR JOSHUA - TOGGLE
+// ANGELO TOGGLE
 
-function toggle_joshua() {
+function toggle_angelo() {
     var blur = document.getElementById('blur')
     blur.classList.toggle('active')
 
-    var popup = document.getElementById('joshua_popup')
+    var popup = document.getElementById('angelo_popup')
     popup.classList.toggle('active')
 }
 
-// MAAM IVY - TOGGLE
+// SOFIA TOGGLE
 
-function toggle_ivy() {
+function toggle_sofia() {
     var blur = document.getElementById('blur')
     blur.classList.toggle('active')
 
-    var popup = document.getElementById('ivy_popup')
+    var popup = document.getElementById('sofia_popup')
     popup.classList.toggle('active')
 }
 
+// BAUI TOGGLE
 
-// SIR NESTEVE - TOGGLE
-
-function toggle_nesteve() {
+function toggle_baui() {
     var blur = document.getElementById('blur')
     blur.classList.toggle('active')
 
-    var popup = document.getElementById('nesteve_popup')
+    var popup = document.getElementById('baui_popup')
+    popup.classList.toggle('active')
+}
+
+// ANDREA TOGGLE
+
+function toggle_andrea() {
+    var blur = document.getElementById('blur')
+    blur.classList.toggle('active')
+
+    var popup = document.getElementById('andrea_popup')
     popup.classList.toggle('active')
 }
